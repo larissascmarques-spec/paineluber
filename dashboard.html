@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Dinheiro Mudo | Dashboard do Motorista</title>
+    <meta name="description" content="Acesse seu sistema de anúncios e gerencie seus lucros passivos.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Driver Dashboard View -->
+    <main id="dashboard-view">
+        <header>
+            <h1>DINHEIRO MUDO</h1>
+            <p class="subtitle">Gerencie seus slots de anúncio e comece a lucrar.</p>
+        </header>
+
+        <section class="slots-container" id="slots-container">
+            <!-- Slots will be generated here by JavaScript -->
+        </section>
+
+        <section style="margin-top: 2rem;">
+            <button id="btn-start-player" class="btn btn-primary">
+                🚀 INICIAR PAINEL NO TABLET
+            </button>
+            <p style="text-align: center; font-size: 0.8rem; color: var(--text-dim); margin-top: 1rem;">
+                Dica: Fixe o tablet no banco de trás e aperte o botão acima.
+            </p>
+        </section>
+
+        <!-- Script WhatsApp Link mockup -->
+        <section class="glass" style="margin-top: 3rem; padding: 1.5rem;">
+            <h3 style="margin-bottom: 0.5rem; font-size: 1rem;">💼 Ferramentas do Motorista</h3>
+            <p style="font-size: 0.85rem; color: var(--text-dim);">Copie o script para fechar novos anunciantes agora!</p>
+            <button id="btn-copy-script" class="btn btn-close" style="width: 100%; margin-top: 1rem;">
+                📋 Copiar Script de Vendas
+            </button>
+        </section>
+    </main>
+
+    <!-- Ad Editor Modal -->
+    <div id="modal-editor" class="modal">
+        <div class="modal-content glass">
+            <h2 id="modal-title">Editar Anunciante 1</h2>
+            <p style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 1.5rem;">Configure o tempo e a imagem do anúncio.</p>
+            
+            <form id="form-edit">
+                <input type="hidden" id="edit-slot-id">
+                
+                <label for="ad-image-input" class="file-upload-label" id="upload-label">
+                    <span>📸 Clique para subir a foto</span>
+                    <input type="file" id="ad-image-input" accept="image/*">
+                </label>
+                
+                <img id="preview-img" alt="Preview" class="preview-img">
+                
+                <div style="margin-top: 1.5rem;">
+                    <label style="display: block; font-size: 0.85rem; margin-bottom: 0.5rem;">⏱️ Tempo de exibição (segundos)</label>
+                    <input type="number" id="ad-duration" value="10" min="5" max="60" 
+                           style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(0,0,0,0.3); color: white;">
+                </div>
+                
+                <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                    <button type="submit" class="btn btn-primary" style="flex: 2;">SALVAR</button>
+                </div>
+            </form>
+            <button id="btn-cancel" class="btn btn-close">CANCELAR</button>
+        </div>
+    </div>
+
+    <!-- Fullscreen Player View -->
+    <div id="player-view">
+        <div id="slides-container"></div>
+        <div class="progress-bar-container">
+            <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <!-- Simple Close Button for testing -->
+        <button id="btn-close-player" style="position: fixed; top: 10px; right: 10px; opacity: 0.2; color: white; background: none; border: none; font-size: 2rem; cursor: pointer;">&times;</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -2,10 +2,13 @@
 
 O sistema está pronto! Abaixo, sigo o passo a passo para você testar a solução agora mesmo no seu computador ou tablet.
 
-## 1. Como Usar o Dashboard (Cofre do Motorista)
-1. **Abra o arquivo [index.html](file:///c:/Users/LARISSA/Desktop/extension%20UEDA/painel-dinheiro-mudo/index.html)** no seu navegador.
+## 1. Como Usar o Sistema (Dashboard do Motorista)
+1. **Abra o arquivo [dashboard.html](file:///c:/Users/LARISSA/Desktop/extension%20UEDA/painel-dinheiro-mudo/dashboard.html)** no seu navegador. 
 2. Você verá o **Painel de Controle** com 6 slots de anúncios vazios.
 3. Clique em qualquer slot para abrir o editor.
+
+## 2. Página de Vendas (Para seus compradores)
+O arquivo **[index.html](file:///c:/Users/LARISSA/Desktop/extension%20UEDA/painel-dinheiro-mudo/index.html)** agora é a sua **Página de Vendas**. É ela que você deve dar para os motoristas interessados em comprar o sistema por R$ 67.
 4. **Suba as fotos dos anúncios** que eu gerei para você (veja na galeria abaixo).
 5. Defina o tempo de exibição (ex: 10 segundos).
 6. Salve cada slot. Os cartões ficarão com uma borda roxa e o ícone de "check" verde ✅.
