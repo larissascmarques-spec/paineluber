@@ -4,9 +4,7 @@
   "description": "Sistema de outdoor digital para tablets em carros de aplicativo.",
   "main": "index.html",
   "scripts": {
-    "start": "servor . index.html 8080",
-    "build": "mkdir -p dist && cp -r * dist && rm -rf dist/node_modules",
-    "dev": "npx serve ."
+    "build": "echo 'Static Project'"
   },
   "keywords": ["uber", "taxi", "billboard", "digital-out-of-home"],
   "author": "Antigravity AI",
