@@ -1,10 +1,10 @@
 {
   "name": "painel-dinheiro-mudo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Sistema de outdoor digital para tablets em carros de aplicativo.",
   "main": "index.html",
   "scripts": {
-    "build": "echo 'Static Project'"
+    "build": "mkdir -p dist && cp -rv *.html *.css *.js *.md package.json vercel.json dist/"
   },
   "keywords": ["uber", "taxi", "billboard", "digital-out-of-home"],
   "author": "Antigravity AI",
